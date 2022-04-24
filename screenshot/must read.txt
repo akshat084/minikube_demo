@@ -1,0 +1,2 @@
+After the 4th when you Enter the command(5th) you will be redirected to the browser and you get the URL with port
+if you are get any error or the browser is not opening automatically go to "Error Solving in git repo"
