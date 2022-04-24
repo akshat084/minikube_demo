@@ -1,0 +1,36 @@
+# minikube_demo
+ 
+Here i Performed Demo for configartion and access of Mongo-Express and MongoDB from Brouser.
+step 1 : Launch miniKube
+step 2 : write a YAML or YML files for configer MongoDB (mongo.YML)
+         mongo.YML contains
+         1) Deployment
+         2) Container
+         3) key values( for ID and Pass)
+         4) service
+         
+ step 3 : write a YAML or YML files for secret informaiton (mongo-secret.YML)
+         mongo-secret.YML contains
+         1) ID for log in DB
+         2) password
+         
+ step 4 : now first APLLY secret.yml file & than mongo.yml
+ command for that "kubectl apply -f <file name>
+  
+ step 5 : write a YAML or YML files for mongo-express (mongo-express.YAML)
+         mongo-express.YML contains
+         1) Deployment
+         2) Container
+         3) key values( for ID and Pass)
+         4) service
+  
+  step 6 : write a YAML or YML files for mongo-configmap mongo-configmap.YAML)
+         mongo-express.YML contains
+         1) database URL
+  
+   step 7 : now first APLLY mongo-configmap.yaml file & than mongo-express.yaml
+ command for that "kubectl apply -f <file name>
+  
+  step 8 : now you can access mongo express from WEB
+  
+  reference video link : https://www.youtube.com/watch?v=EQNO_kM96Mo&list=PLy7NrYWoggjziYQIDorlXjTvvwweTYoNC&index=13
